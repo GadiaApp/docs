@@ -1,6 +1,6 @@
 {
   "title": "Gadia",
-  "description": "Consultez les informations sur l'API de Gadia",
-  "icon": "",
+  "description": "Apprenez à installer, configurer et utiliser Gadia",
+  "icon": "BookOpen",
   "root": true
 }

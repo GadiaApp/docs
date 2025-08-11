@@ -1,6 +1,7 @@
 {
   "title": "API",
   "description": "Consultez les informations sur l'API de Gadia",
-  "icon": "",
-  "root": true
+  "icon": "CodeXml",
+  "root": true,
+  "pages": ["index", "...(generated)"]
 }

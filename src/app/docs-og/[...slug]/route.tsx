@@ -1,6 +1,10 @@
 import { generateOGImage } from 'fumadocs-ui/og';
 import { source } from '@/lib/source';
 import { notFound } from 'next/navigation';
+import { readFileSync } from 'node:fs';
+
+const font = readFileSync('./app/docs-og/[...slug]/JetBrainsMono-Regular.ttf');
+const fontBold = readFileSync('./app/docs-og/[...slug]/JetBrainsMono-Bold.ttf');
 
 export async function GET(
   _req: Request,
@@ -14,6 +18,18 @@ export async function GET(
     title: page.data.title,
     description: page.data.description,
     site: 'Gadia • Système de gestion de la vie-scolaire',
+      fonts: [
+          {
+              name: 'Mono',
+              data: font,
+              weight: 400,
+          },
+          {
+              name: 'Mono',
+              data: fontBold,
+              weight: 600,
+          },
+      ],
   });
 }
 

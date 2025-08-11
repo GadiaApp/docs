@@ -1,6 +1,6 @@
 {
   "title": "Core",
-  "description": "Consultez les informations sur l'API de Gadia",
-  "icon": "",
+  "description": "Documentation à destination des développeurs",
+  "icon": "Box",
   "root": true
 }
